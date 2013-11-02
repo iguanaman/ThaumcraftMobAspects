@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ThaumcraftMobAspects">
+    <property environment="env"/>
+    <property name="src.link" value="../../thaumcraftmobaspects/src"/>
+    <property name="minecraft.link" value="../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/src/minecraft"/>
+    <property name="Minecraft.location" value="../Minecraft"/>
+    <property name="ModStats.location" value="../ModStats"/>
+    <property name="ThaumcraftApi.location" value="../ThaumcraftApi"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Minecraft.classpath">
+        <pathelement location="${Minecraft.location}/bin"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/versions/1.6.4/1.6.4.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/argo/argo/2.25_fixed/argo-2.25_fixed.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/com/google/code/gson/gson/2.2.2/gson-2.2.2.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/com/google/guava/guava/14.0/guava-14.0.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/com/paulscode/codecjorbis/20101023/codecjorbis-20101023.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/com/paulscode/codecwav/20101023/codecwav-20101023.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/com/paulscode/libraryjavasound/20101123/libraryjavasound-20101123.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/com/paulscode/librarylwjglopenal/20100824/librarylwjglopenal-20100824.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/com/paulscode/soundsystem/20120107/soundsystem-20120107.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/lzma/lzma/0.0.1/lzma-0.0.1.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/net/minecraft/launchwrapper/1.8/launchwrapper-1.8.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/net/sourceforge/argo/argo/2.25/argo-2.25.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/org/bouncycastle/bcprov-jdk15on/1.47/bcprov-jdk15on-1.47.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/org/lwjgl/lwjgl/lwjgl/2.9.0/lwjgl-2.9.0.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.0/lwjgl_util-2.9.0.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/org/ow2/asm/asm-debug-all/4.1/asm-debug-all-4.1.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/org/scala-lang/scala-compiler/2.10.2/scala-compiler-2.10.2.jar"/>
+        <pathelement location="${Minecraft.location}/../../minecraftforge-src-1.6.4-9.11.1.916/forge/mcp/jars/libraries/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2.jar"/>
+    </path>
+    <path id="ModStats.classpath">
+        <pathelement location="${ModStats.location}/bin"/>
+        <path refid="Minecraft.classpath"/>
+    </path>
+    <path id="ThaumcraftApi.classpath">
+        <pathelement location="${ThaumcraftApi.location}/bin"/>
+        <path refid="Minecraft.classpath"/>
+    </path>
+    <path id="ThaumcraftMobAspects.classpath">
+        <pathelement location="bin"/>
+        <path refid="Minecraft.classpath"/>
+        <path refid="ModStats.classpath"/>
+        <path refid="ThaumcraftApi.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="${src.link}">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="build.xml" dir="${Minecraft.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${ModStats.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${ThaumcraftApi.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="build.xml" dir="${Minecraft.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="build.xml" dir="${ModStats.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="build.xml" dir="${ThaumcraftApi.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="${src.link}"/>
+            <classpath refid="ThaumcraftMobAspects.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>
