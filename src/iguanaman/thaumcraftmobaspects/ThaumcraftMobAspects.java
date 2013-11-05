@@ -63,9 +63,10 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.common.registry.TickRegistry;
 import cpw.mods.fml.relauncher.Side;
 
-@Mod(modid="ThaumcraftMobAspects", name="Thaumcraft Mob Aspects", version="1.6.X-1a", dependencies="required-after:Thaumcraft@;after:MoCreatures@")
+@Mod(modid="ThaumcraftMobAspects", name="Thaumcraft Mob Aspects", version="1.6.X-1b", 
+dependencies="required-after:Thaumcraft;after:MoCreatures;after:LycanitesMobs;after:SpecialMobs")
 @NetworkMod(clientSideRequired=true, serverSideRequired=true)
-@ModstatInfo(prefix="tcmobaspects")
+@ModstatInfo(prefix="tcmobaspec")
 public class ThaumcraftMobAspects {
 	
     // The instance of your mod that Forge uses.
@@ -79,9 +80,10 @@ public class ThaumcraftMobAspects {
 		ThaumcraftApi.registerEntityTag("the_iguana_man", bossAspects(5, Aspect.MAN, Aspect.MIND, Aspect.SOUL, Aspect.LIFE, Aspect.MAGIC, Aspect.ELDRITCH, Aspect.ENERGY, Aspect.HUNGER));
 		ThaumcraftApi.registerEntityTag("XanderGryphon", bossAspects(5, Aspect.MAN, Aspect.MIND, Aspect.SOUL, Aspect.LIFE, Aspect.MAGIC, Aspect.ELDRITCH, Aspect.ENERGY, Aspect.HUNGER));
 		
-		PluginMoCreatures.init();
-		PluginTwilightForest.init();
 		PluginLycanitesMobs.init();
+		PluginMoCreatures.init();
+		PluginSpecialMobs.init();
+		PluginTwilightForest.init();
 		
     }
     
