@@ -34,7 +34,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
-@Mod(modid="ThaumcraftMobAspects", name="Thaumcraft Mob Aspects", version="1.6.X-1b", dependencies="required-after:*")
+@Mod(modid="ThaumcraftMobAspects", name="Thaumcraft Mob Aspects", version="1.6.X-1c", dependencies="required-after:*")
 @NetworkMod(clientSideRequired=true, serverSideRequired=true)
 @ModstatInfo(prefix="tcmobaspec")
 public class ThaumcraftMobAspects {
