@@ -34,8 +34,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
-@Mod(modid="ThaumcraftMobAspects", name="Thaumcraft Mob Aspects", version="1.6.X-1b", 
-dependencies="required-after:Thaumcraft;after:MoCreatures;after:LycanitesMobs;after:SpecialMobs")
+@Mod(modid="ThaumcraftMobAspects", name="Thaumcraft Mob Aspects", version="1.6.X-1b", dependencies="required-after:*")
 @NetworkMod(clientSideRequired=true, serverSideRequired=true)
 @ModstatInfo(prefix="tcmobaspec")
 public class ThaumcraftMobAspects {
