@@ -4,7 +4,7 @@ public class IguanaLog {
 	
 	public static void log(String text)
 	{
-        System.out.println("[IguanaTweaksTConstruct] " + text);
+        System.out.println("[ThaumcraftMobAspects] " + text);
 	}
 	
 }
