@@ -7,9 +7,9 @@
       "mcversion": "@MCVERSION@",
     "url": "",
     "authors": [
-      "iguana_man"
-	  "lycaon"
-	  "XanderGryphon"
+      "iguana_man",
+      "lycaon",
+      "XanderGryphon"
     ]
   }
 ]
